@@ -15,3 +15,5 @@ app.get("/", (req, res) => {
 app.get("*", (req, res) => {
   res.status(404).json({ error: "Page does not exist!" });
 });
+
+module.exports = app;
